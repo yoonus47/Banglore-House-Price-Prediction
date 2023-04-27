@@ -8,10 +8,10 @@ Monthly rental rate is calculated using the standard yield of 2.5% of the market
 
 ## Implementation
 
-The dataset is taken from Kaggle (https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data)
-I have used simple linear regression fro training, as it gave the highest accuracy.
-Implemented the server using flask.
-It was then exported and hosted in an AWS ec2 Ubuntu server uing nginx.
+- The dataset is taken from Kaggle (https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data)
+- I have used simple linear regression fro training, as it gave the highest accuracy.
+- Implemented the server using flask.
+- It was then exported and hosted in an AWS ec2 Ubuntu server uing nginx.
 
 ## Demo
 
