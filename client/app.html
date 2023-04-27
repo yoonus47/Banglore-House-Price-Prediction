@@ -11,6 +11,11 @@
 
 <form class="form">
 	<h1 >Banglore Housing Price Prediction</h1>
+	<p class="head-text">As the fastest growing city in India according to <a class="aele" href="https://www.businessworld.in/article/Bengaluru-To-Be-Asia-Pacific-s-Fastest-growing-City-In-2023/07-01-2023-460865/">BuisnessWorld</a>,
+		 the supply of residential properties is struggling to catch up to the demand of the housing market.</p>
+		<p class="head-text"> This simple machine learning model is trained on a huge dataset of historical housing data from <a class="aele" href="https://www.kaggle.com/">Kaggle</a> inorder to predict the property value depending on factors such as the area of the property, number of bedrooms etc. Please do not consider the result as the face value of the property but rather as a reference value, as the markets fluctuate a lot.</p>
+		<p class="head-text">Monthly rental rate is calculated using the standard yield of 2.5% of the market value. Can vary on the vendor and several other factors.</p>	
+		
 	<h2>How much Area are you looking for? </h2>
     <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" placeholder="Area in Square Feet">
 	<h2>Number of Bedrooms</h2>
@@ -52,9 +57,11 @@
 	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
 	<div id="uiEstimatedPrice" class="result">	<h2></h2> 
 	</div>
+	<div id="uiEstimatedRent" class="result">	<h2></h2> 
+	</div>
 <div class="name">
 	<div>Muhammad Yoonus<div>
-	<a class="github" href="https://github.com/yoonus47">Github</a>
+	<!-- <a class="github" href="https://github.com/yoonus47">Github</a> -->
 </div>
 	
 

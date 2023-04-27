@@ -25,6 +25,7 @@ function getBathValue() {
     var bathrooms = getBathValue();
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
+    var estRent = document.getElementById("uiEstimatedRent");
   
     // var url = "http://127.0.0.1:5000/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
     var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
@@ -36,8 +37,17 @@ function getBathValue() {
         location: location.value
     },function(data, status) {
         console.log(data.estimated_price);
-        estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " Lakh</h2>";
+        // estpropval = "Estimated Property Value:"
+        // estmonren = "Estimated Monthly Rent:"
+
+        estPrice.innerHTML = "<h2> <span class = 'estvaluept1' > Estimated Property Value:" + " </span><span class = 'estvaluept2'>INR&nbsp;" + data.estimated_price.toString() + " Lakhs</span></h2>";
+        rentcalculated = Math.trunc(data.estimated_price*2500/12);
+        rent = rentcalculated.toLocaleString('en-IN', {
+          maximumFractionDigits: 2,
+      });
+        estRent.innerHTML = "<h2> <span class = 'estvaluept1'>Estimated Monthly Rent:" + " </span><span class = 'estvaluept2'>INR&nbsp;" + rent + "</span></h2>";
         console.log(status);
+        console.log(rent)
     });
   }
   
@@ -60,5 +70,3 @@ function getBathValue() {
   }
   
   window.onload = onPageLoad;
-
-  
