@@ -17,4 +17,4 @@ Monthly rental rate is calculated using the standard yield of 2.5% of the market
 
 ![](https://github.com/yoonus47/Banglore-House-Price-Prediction/blob/master/Recording/scr.gif)
 
-You can check out the site from the link: (https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data)
+You can check out the site from the link: (http://ec2-3-104-110-39.ap-southeast-2.compute.amazonaws.com/)
